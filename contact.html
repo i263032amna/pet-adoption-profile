@@ -1,0 +1,252 @@
+
+<!-- Amna Arshad -->
+<!-- i263032 -->
+<!-- Lab 11 - Pet Adoption Website -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Us | Paw Haven</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+
+            <h2 class="logo">PAW HAVEN</h2>
+
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Pet Profiles</a></li>
+                <li><a href="adopt.html">How to Adopt</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Contact Introduction -->
+    <section class="contact-heading">
+
+        <h1>Get In Touch With Us</h1>
+
+        <p>
+            Have questions about pet adoption?
+            Need assistance or want to know more about our pets?
+
+            We would love to hear from you!
+            Reach out to us through any of the contact methods below.
+        </p>
+
+    </section>
+
+
+    <!-- Contact Information -->
+    <section class="contact-section">
+
+        <h2>Contact Information</h2>
+
+        <div class="contact-container">
+
+            <!-- Gmail -->
+            <div class="contact-card">
+
+                <h3>Gmail / Email</h3>
+
+                <p>
+                    Send us your questions and inquiries through email.
+                </p>
+
+                <a href="mailto:pawhaven@example.com">
+                    pawhaven@example.com
+                </a>
+
+            </div>
+
+
+            <!-- Mobile Number -->
+            <div class="contact-card">
+
+                <h3>Mobile Number</h3>
+
+                <p>
+                    Call us directly for quick assistance.
+                </p>
+
+                <a href="tel:+923001234567">
+                    +92 300 1234567
+                </a>
+
+            </div>
+
+
+            <!-- Landline -->
+            <div class="contact-card">
+
+                <h3>Landline</h3>
+
+                <p>
+                    Contact our office during working hours.
+                </p>
+
+                <a href="tel:+92511234567">
+                    +92 51 1234567
+                </a>
+
+            </div>
+
+
+            <!-- WhatsApp -->
+            <div class="contact-card">
+
+                <h3>WhatsApp</h3>
+
+                <p>
+                    Send us a message for adoption-related queries.
+                </p>
+
+                <a href="https://wa.me/923001234567" target="_blank">
+                    Chat With Us
+                </a>
+
+            </div>
+
+
+            <!-- Office Address -->
+            <div class="contact-card">
+
+                <h3>Our Location</h3>
+
+                <p>
+                    Visit our adoption center.
+                </p>
+
+                <p>
+                    Islamabad, Pakistan
+                </p>
+
+            </div>
+
+
+            <!-- Working Hours -->
+            <div class="contact-card">
+
+                <h3>Working Hours</h3>
+
+                <p>Monday - Friday: 9 AM - 6 PM</p>
+
+                <p>Saturday: 10 AM - 4 PM</p>
+
+                <p>Sunday: Closed</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+
+        <h2>Send Us a Message</h2>
+
+        <p>
+            Fill out the form below and let us know how we can help you.
+        </p>
+
+        <form id="contactForm">
+
+            <label for="name">Your Name</label>
+
+            <input type="text" id="name"
+            placeholder="Enter your name" required>
+
+
+            <label for="email">Your Email</label>
+
+            <input type="email" id="email"
+            placeholder="Enter your email" required>
+
+
+            <label for="subject">Subject</label>
+
+            <input type="text" id="subject"
+            placeholder="Enter subject" required>
+
+
+            <label for="message">Your Message</label>
+
+            <textarea id="message" rows="5"
+            placeholder="Write your message here..."
+            required></textarea>
+
+
+            <button type="submit">Submit Message</button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Social Media -->
+    <section class="social-section">
+
+        <h2>Follow Us</h2>
+
+        <p>
+            Stay connected with Paw Haven and keep up
+            with our adorable pets!
+        </p>
+
+        <div class="social-links">
+
+            <a href="https://www.instagram.com/" target="_blank">
+                Instagram
+            </a>
+
+            <a href="https://www.facebook.com/" target="_blank">
+                Facebook
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h2>PAW HAVEN</h2>
+
+        <p>Every Pet Deserves a Loving Home.</p>
+
+        <p>© 2026 Paw Haven. All Rights Reserved.</p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script>
+
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            let name = document.getElementById("name").value;
+
+            alert("Thank you, " + name + "! Your message has been received.");
+
+            document.getElementById("contactForm").reset();
+
+        });
+
+    </script>
+
+</body>
+</html>
